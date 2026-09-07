@@ -356,7 +356,9 @@ function App() {
           </div>
 
           <a
-            href={`mailto:${EMAIL}`}
+            href="https://wa.me/4915258400610"
+            target="_blank"
+            rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all"
           >
             <Mail className="w-5 h-5" />
