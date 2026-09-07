@@ -53,6 +53,16 @@ const translations = {
         desc: 'MVP, CRM, Dashboard, Automatisierung für Unternehmen. Schlüsselfertig. Dauer: 1–2 Wochen.',
         tag: 'Turnkey',
       },
+      {
+        title: 'ADB TV Manager',
+        desc: 'Linux-Tool zur Verwaltung von 10+ Android TV Boxen via ADB. Auto-Erkennung, Logging, WiFi-Login, Scheduling.',
+        tag: 'Linux / Android',
+      },
+      {
+        title: 'ZIP → Link',
+        desc: 'ZIP hochladen → automatisch auf Cloudflare Pages deployen → Link per Telegram erhalten.',
+        tag: 'Tool',
+      },
     ],
     skillsTitle: 'Kompetenzen',
     skillsSub: 'Was ich mache',
@@ -99,6 +109,16 @@ const translations = {
         title: 'Freelance Projects',
         desc: 'MVP, CRM, Dashboard, Automation for business. Turnkey. Timeline: 1–2 weeks.',
         tag: 'Turnkey',
+      },
+      {
+        title: 'ADB TV Manager',
+        desc: 'Linux toolkit for managing 10+ Android TV boxes via ADB. Auto-detect, logging, WiFi login, scheduling.',
+        tag: 'Linux / Android',
+      },
+      {
+        title: 'ZIP → Link',
+        desc: 'Upload ZIP → auto-deploy to Cloudflare Pages → get link via Telegram.',
+        tag: 'Tool',
       },
     ],
     skillsTitle: 'Skills',
@@ -147,6 +167,16 @@ const translations = {
         desc: 'MVP, CRM, Dashboard, автоматизация для бизнеса. Под ключ. Срок: 1–2 недели.',
         tag: 'Под ключ',
       },
+      {
+        title: 'ADB TV Manager',
+        desc: 'Linux-инструмент управления 10+ Android TV приставками через ADB. Автообнаружение, логи, WiFi-логин, расписание.',
+        tag: 'Linux / Android',
+      },
+      {
+        title: 'ZIP → Link',
+        desc: 'Загрузи ZIP → автодеплой на Cloudflare Pages → получи ссылку в Telegram.',
+        tag: 'Tool',
+      },
     ],
     skillsTitle: 'Что умею',
     skillsSub: 'Мои услуги',
@@ -169,15 +199,18 @@ const stack = [
   'React', 'TypeScript', 'Node.js', 'Firebase', 'Tailwind CSS',
   'Vite', 'Vercel', 'Render', 'Cloudflare', 'Railway',
   'Webhook Automation', 'CRM Systems', 'Booking Systems', 'White-Label SaaS',
+  'Linux', 'Bash', 'ADB', 'Android TV',
 ];
 
 const caseLinks = [
   'https://webstudio-muenchen.com',
   'https://webstudio-sdk-muenchen.com',
   null,
+  'https://github.com/IgorUspehov/adb-tv-manager',
+  'https://github.com/IgorUspehov/zip-to-link',
 ];
 
-const EMAIL = 'ihor@webstudio-muenchen.com';
+const EMAIL = 'ihor.uspeh2024@gmail.com';
 const WHATSAPP = '+4915258400610';
 const GITHUB_URL = 'https://github.com/IgorUspehov';
 
@@ -290,6 +323,19 @@ function App() {
             {t.hero.available}
           </div>
 
+          <img
+            src="/photo.jpg"
+            alt={t.hero.name}
+            className="mx-auto mb-6"
+            style={{
+              width: 120,
+              height: 120,
+              borderRadius: '50%',
+              border: '3px solid #6366f1',
+              objectFit: 'cover',
+            }}
+          />
+
           <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight mb-4 animate-[fadeIn_0.7s_ease]">
             {t.hero.name}
           </h1>
@@ -364,12 +410,16 @@ function App() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-medium hover:text-indigo-700 transition-colors"
                     >
-                      {t.nav.about === 'Über' ? 'Besuchen' : t.nav.about === 'О себе' ? 'Открыть' : 'Visit'}
-                      <ExternalLink className="w-3.5 h-3.5" />
+                      {link.includes('github.com')
+                        ? 'GitHub →'
+                        : t.nav.about === 'Über' ? 'Besuchen' : t.nav.about === 'О себе' ? 'Открыть' : 'Visit'}
+                      {!link.includes('github.com') && <ExternalLink className="w-3.5 h-3.5" />}
                     </a>
                   ) : (
                     <a
-                      href={`mailto:${EMAIL}`}
+                      href="https://wa.me/4915258400610"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-medium hover:text-indigo-700 transition-colors"
                     >
                       {t.hero.cta}
@@ -419,7 +469,7 @@ function App() {
               {EMAIL}
             </a>
             <a
-              href={`https://wa.me/${WHATSAPP.replace('+', '')}`}
+              href="https://wa.me/4915258400610"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold shadow-sm hover:bg-slate-50 hover:border-slate-300 transition-all"
