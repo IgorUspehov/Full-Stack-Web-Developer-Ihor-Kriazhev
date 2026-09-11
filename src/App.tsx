@@ -483,6 +483,22 @@ function App() {
         </div>
       </section>
 
+      {/* Factory School */}
+      <section style={{ padding: '80px 20px', background: '#0f0f1a', textAlign: 'center' }}>
+        <h2 style={{ color: 'white', fontSize: '2rem', marginBottom: '16px' }}>Хочешь научиться делать это сам?</h2>
+        <p style={{ color: '#aaa', fontSize: '1.1rem', marginBottom: '32px', maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto' }}>
+          Factory School — курс по созданию настоящих приложений с помощью AI. Без кода. От идеи до готового продукта.
+        </p>
+        <a
+          href="https://factory-school-ihor-kriazhev.onrender.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ background: '#6c3cf7', color: 'white', padding: '16px 40px', borderRadius: '8px', fontSize: '1.1rem', textDecoration: 'none', display: 'inline-block' }}
+        >
+          Перейти на Factory School →
+        </a>
+      </section>
+
       {/* Footer */}
       <footer className="relative border-t border-slate-200/60 px-5 sm:px-8 py-10">
         <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
