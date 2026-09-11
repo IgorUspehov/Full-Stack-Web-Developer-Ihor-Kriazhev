@@ -63,6 +63,11 @@ const translations = {
         desc: 'ZIP hochladen → automatisch auf Cloudflare Pages deployen → Link per Telegram erhalten.',
         tag: 'Tool',
       },
+      {
+        title: 'Factory School',
+        desc: 'KI-gestützte App-Entwicklung ohne Code. Dashboard + CRM + Booking. Von der Idee zum fertigen Produkt.',
+        tag: 'Kurs',
+      },
     ],
     skillsTitle: 'Kompetenzen',
     skillsSub: 'Was ich mache',
@@ -119,6 +124,11 @@ const translations = {
         title: 'ZIP → Link',
         desc: 'Upload ZIP → auto-deploy to Cloudflare Pages → get link via Telegram.',
         tag: 'Tool',
+      },
+      {
+        title: 'Factory School',
+        desc: 'AI-powered app development without code. Dashboard + CRM + Booking. From idea to finished product.',
+        tag: 'Course',
       },
     ],
     skillsTitle: 'Skills',
@@ -177,6 +187,11 @@ const translations = {
         desc: 'Загрузи ZIP → автодеплой на Cloudflare Pages → получи ссылку в Telegram.',
         tag: 'Tool',
       },
+      {
+        title: 'Factory School',
+        desc: 'Разработка приложений с помощью AI без кода. Dashboard + CRM + Booking. От идеи до готового продукта.',
+        tag: 'Курс',
+      },
     ],
     skillsTitle: 'Что умею',
     skillsSub: 'Мои услуги',
@@ -208,6 +223,7 @@ const caseLinks = [
   null,
   'https://github.com/IgorUspehov/adb-tv-manager',
   'https://github.com/IgorUspehov/zip-to-link',
+  'https://factory-school-ihor-kriazhev.onrender.com',
 ];
 
 const EMAIL = 'ihor.uspeh2024@gmail.com';
