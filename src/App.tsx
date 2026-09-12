@@ -37,6 +37,7 @@ const translations = {
     stackSub: 'Werkzeuge, mit denen ich täglich arbeite',
     casesTitle: 'Projekte',
     casesSub: 'Ausgewählte Arbeiten und Produkte',
+    featuredDesc: 'Universelle Robotersteuerungsplattform — 3D-Simulation, 6-Achsen-Manipulator, Pick & Place',
     cases: [
       {
         title: 'webstudio-muenchen.com',
@@ -99,6 +100,7 @@ const translations = {
     stackSub: 'Tools I work with every day',
     casesTitle: 'Projects',
     casesSub: 'Selected work and products',
+    featuredDesc: 'Universal robot control platform — 3D simulation, 6-axis manipulator, pick & place',
     cases: [
       {
         title: 'webstudio-muenchen.com',
@@ -161,6 +163,7 @@ const translations = {
     stackSub: 'Инструменты, с которыми я работаю каждый день',
     casesTitle: 'Кейсы',
     casesSub: 'Избранные работы и продукты',
+    featuredDesc: 'Универсальная платформа управления роботами — 3D симуляция, 6-осевой манипулятор',
     cases: [
       {
         title: 'webstudio-muenchen.com',
@@ -408,6 +411,41 @@ function App() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2 text-center">{t.casesTitle}</h2>
           <p className="text-slate-500 text-center mb-12">{t.casesSub}</p>
+          <div className="w-full rounded-3xl bg-gradient-to-r from-slate-900 to-indigo-950 p-6 md:p-8 mb-5">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <div>
+                <span className="inline-block px-2.5 py-0.5 rounded-md bg-orange-500 text-white text-xs font-semibold mb-4">
+                  🤖 FEATURED PROJECT
+                </span>
+                <h3 className="text-white text-3xl font-bold mb-2">Robot Controller MVP</h3>
+                <p className="text-slate-400 mb-4">Physical AI · Vision · Control</p>
+                <p className="text-slate-300 text-sm leading-relaxed mb-6">{t.featuredDesc}</p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://robot-controller-mvp.onrender.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-5 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors"
+                  >
+                    Open Live Demo →
+                  </a>
+                  <a
+                    href="https://github.com/IgorUspehov/robot-controller-mvp"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-5 py-2.5 rounded-lg border border-slate-600 text-slate-300 text-sm font-semibold hover:border-slate-400 hover:text-white transition-colors"
+                  >
+                    View on GitHub
+                  </a>
+                </div>
+              </div>
+              <iframe
+                src="https://robot-controller-mvp.onrender.com"
+                title="Robot Controller MVP"
+                className="w-full h-64 md:h-80 rounded-2xl border border-slate-700 pointer-events-none"
+              />
+            </div>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {t.cases.map((c, i) => {
               const link = caseLinks[i];
