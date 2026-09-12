@@ -420,24 +420,14 @@ function App() {
                 <h3 className="text-white text-3xl font-bold mb-2">Robot Controller MVP</h3>
                 <p className="text-slate-400 mb-4">Physical AI · Vision · Control</p>
                 <p className="text-slate-300 text-sm leading-relaxed mb-6">{t.featuredDesc}</p>
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="https://robot-controller-mvp.onrender.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-5 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors"
-                  >
-                    Open Live Demo →
-                  </a>
-                  <a
-                    href="https://github.com/IgorUspehov/robot-controller-mvp"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center px-5 py-2.5 rounded-lg border border-slate-600 text-slate-300 text-sm font-semibold hover:border-slate-400 hover:text-white transition-colors"
-                  >
-                    View on GitHub
-                  </a>
-                </div>
+                <a
+                  href="https://robot-controller-mvp.onrender.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center px-5 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors"
+                >
+                  Open Live Demo →
+                </a>
               </div>
               <iframe
                 src="https://robot-controller-mvp.onrender.com"
