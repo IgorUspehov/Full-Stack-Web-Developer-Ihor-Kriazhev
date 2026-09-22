@@ -38,6 +38,13 @@ const translations = {
     casesTitle: 'Projekte',
     casesSub: 'Ausgewählte Arbeiten und Produkte',
     featuredDesc: 'Universelle Robotersteuerungsplattform — 3D-Simulation, 6-Achsen-Manipulator, Pick & Place',
+    industrialAI: {
+      tag: 'Industrial AI',
+      title: 'Industrial AI + Bali Controller',
+      desc: 'LLM-Training auf Basis von Offline-Unternehmensdaten. Live-Demo: Echtzeit-Überwachung einer Extrusionslinie.',
+      demoLink: 'Live Demo →',
+      aiLink: 'Industrial AI →',
+    },
     cases: [
       {
         title: 'webstudio-muenchen.com',
@@ -101,6 +108,13 @@ const translations = {
     casesTitle: 'Projects',
     casesSub: 'Selected work and products',
     featuredDesc: 'Universal robot control platform — 3D simulation, 6-axis manipulator, pick & place',
+    industrialAI: {
+      tag: 'Industrial AI',
+      title: 'Industrial AI + Bali Controller',
+      desc: 'LLM training on offline enterprise data. Live demo: real-time extrusion line monitoring.',
+      demoLink: 'Live Demo →',
+      aiLink: 'Industrial AI →',
+    },
     cases: [
       {
         title: 'webstudio-muenchen.com',
@@ -164,6 +178,13 @@ const translations = {
     casesTitle: 'Кейсы',
     casesSub: 'Избранные работы и продукты',
     featuredDesc: 'Универсальная платформа управления роботами — 3D симуляция, 6-осевой манипулятор',
+    industrialAI: {
+      tag: 'Industrial AI',
+      title: 'Industrial AI + Bali Controller',
+      desc: 'Обучение LLM на офлайн-данных предприятия. Живое демо: мониторинг экструзионной линии в реальном времени.',
+      demoLink: 'Live Demo →',
+      aiLink: 'Industrial AI →',
+    },
     cases: [
       {
         title: 'webstudio-muenchen.com',
@@ -432,6 +453,41 @@ function App() {
               <iframe
                 src="https://robot-controller-mvp.onrender.com"
                 title="Robot Controller MVP"
+                className="w-full h-64 md:h-80 rounded-2xl border border-slate-700 pointer-events-none"
+              />
+            </div>
+          </div>
+          <div className="w-full rounded-3xl bg-gradient-to-r from-slate-900 to-indigo-950 p-6 md:p-8 mb-5">
+            <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center">
+              <div>
+                <span className="inline-block px-2.5 py-0.5 rounded-md bg-orange-500 text-white text-xs font-semibold mb-4">
+                  {t.industrialAI.tag}
+                </span>
+                <h3 className="text-white text-3xl font-bold mb-2">{t.industrialAI.title}</h3>
+                <p className="text-slate-400 mb-4">LLM · Data Pipeline · Monitoring</p>
+                <p className="text-slate-300 text-sm leading-relaxed mb-6">{t.industrialAI.desc}</p>
+                <div className="flex flex-wrap gap-3">
+                  <a
+                    href="https://bali-startapp-controller.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-5 py-2.5 rounded-lg bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold transition-colors"
+                  >
+                    {t.industrialAI.demoLink}
+                  </a>
+                  <a
+                    href="https://industrial-ai-zqoy.onrender.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-5 py-2.5 rounded-lg border border-slate-600 hover:border-slate-400 text-white text-sm font-semibold transition-colors"
+                  >
+                    {t.industrialAI.aiLink}
+                  </a>
+                </div>
+              </div>
+              <iframe
+                src="https://bali-startapp-controller.onrender.com/"
+                title="Industrial AI + Bali Controller"
                 className="w-full h-64 md:h-80 rounded-2xl border border-slate-700 pointer-events-none"
               />
             </div>
