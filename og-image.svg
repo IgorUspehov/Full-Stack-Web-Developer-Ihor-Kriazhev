@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD400"/>
+      <stop offset="0.55" stop-color="#FFF7B8"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#0B4DFF"/>
+      <stop offset="1" stop-color="#16A0FF"/>
+    </linearGradient>
+    <clipPath id="avatar"><circle cx="170" cy="315" r="135"/></clipPath>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="170" cy="315" r="151" fill="#fff" opacity=".9"/>
+  <image href="https://avatars.githubusercontent.com/u/202466733?v=4" x="35" y="180" width="270" height="270" preserveAspectRatio="xMidYMid slice" clip-path="url(#avatar)"/>
+  <text x="360" y="135" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="#101B3D">FULL-STACK</text>
+  <text x="360" y="205" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="800" fill="#0B4DFF">WEB DEVELOPER</text>
+  <text x="365" y="255" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#101B3D">IHOR KRIAZHEV · MUNICH</text>
+  <rect x="360" y="285" rx="18" width="700" height="68" fill="#101B3D"/>
+  <text x="395" y="330" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">WEB · AI · AUTOMATION · SOFTWARE</text>
+  <text x="360" y="405" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#101B3D">Web Apps &amp; Dashboards</text>
+  <text x="360" y="448" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#101B3D">Business Automation</text>
+  <text x="360" y="491" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#101B3D">AI Integration</text>
+  <rect x="360" y="530" rx="16" width="760" height="58" fill="url(#blue)"/>
+  <text x="390" y="568" font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="700" fill="#FFFFFF">full-stack-web-developer-ihor-kriazhev.onrender.com</text>
+</svg>
