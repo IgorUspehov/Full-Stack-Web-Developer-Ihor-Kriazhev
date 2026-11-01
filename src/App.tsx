@@ -4,6 +4,7 @@ import {
   Mail,
   MapPin,
   Phone,
+  Send,
   Tag,
   ExternalLink,
   Code2,
@@ -251,7 +252,8 @@ const caseLinks = [
 ];
 
 const EMAIL = 'ihor.uspeh2024@gmail.com';
-const WHATSAPP = '+4915258400610';
+const WHATSAPP = '+4915214580053';
+const TELEGRAM_URL = 'https://t.me/webstudio_munich_ihor_kriazhev';
 const GITHUB_URL = 'https://github.com/IgorUspehov';
 
 function App() {
@@ -396,7 +398,7 @@ function App() {
           </div>
 
           <a
-            href="https://wa.me/4915258400610"
+            href="https://wa.me/4915214580053"
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-to-r from-indigo-600 to-blue-600 text-white font-semibold shadow-lg shadow-indigo-500/25 hover:shadow-indigo-500/40 hover:scale-[1.02] transition-all"
@@ -519,7 +521,7 @@ function App() {
                     </a>
                   ) : (
                     <a
-                      href="https://wa.me/4915258400610"
+                      href="https://wa.me/4915214580053"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1.5 text-indigo-600 text-sm font-medium hover:text-indigo-700 transition-colors"
@@ -571,13 +573,22 @@ function App() {
               {EMAIL}
             </a>
             <a
-              href="https://wa.me/4915258400610"
+              href="https://wa.me/4915214580053"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold shadow-sm hover:bg-slate-50 hover:border-slate-300 transition-all"
             >
               <Phone className="w-5 h-5 text-emerald-500" />
               WhatsApp
+            </a>
+            <a
+              href={TELEGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-white border border-slate-200 text-slate-700 font-semibold shadow-sm hover:bg-slate-50 hover:border-slate-300 transition-all"
+            >
+              <Send className="w-5 h-5 text-sky-500" />
+              Telegram
             </a>
           </div>
         </div>
